@@ -1,4 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 :root{
     --azul-escuro: #1F1D2B;
+    --azul-claro: #68AFFF;
+    --font-poppins: "Poppins", sans-serif;
+    --cinza: #ADADAD;
 }
+
+.poppins {
+    font-family: "Poppins", sans-serif;
+}
+  

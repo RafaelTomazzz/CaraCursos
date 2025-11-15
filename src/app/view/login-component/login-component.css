@@ -26,3 +26,127 @@ main{
     display: flex;
     flex-direction: column;
 }
+
+main section:first-child {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, h2 {
+    color: white;
+    margin: 0px;
+}
+
+h1 {
+    font-size: 55px;
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 21px;
+}
+
+b {
+    font-weight: 500;
+}
+
+main section:last-child {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 37px;
+}
+
+.input-content{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 13px;
+}
+
+label{
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+
+input {
+    height: 55px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: var(--cinza);
+    border-radius: 10px;
+    border-width: 2px;
+    padding-left: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
+input:focus{
+    transition: ease-in-out, 500ms;
+    border-color: var(--azul-claro);
+    outline: none;
+}
+
+button{
+    width: 100%;
+    height: 55px;
+    background-color: var(--azul-claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    border-color: var(--azul-claro);
+    border-width: 2px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    transition: ease-in-out, 200ms;
+    box-shadow: 0 0 8px var(--azul-claro);
+}
+
+button:active {
+    transition: ease-in-out, 200ms;
+    box-shadow: 0 0 15px var(--azul-claro);
+    background-color: transparent;
+    color: var(--azul-claro);
+}
+
+.input-content div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-content p {
+    margin: 0px;
+    color: var(--cinza);
+    cursor: pointer;
+}
+
+.input-content p:hover {
+    margin: 0px;
+    color: var(--azul-claro);
+    cursor: pointer;
+}
+
+input[type="checkbox"]{
+    
+    width: 16px;
+    height: 16px;
+    background-color: var(--cinza);
+
+}
