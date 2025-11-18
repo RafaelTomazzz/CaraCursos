@@ -1,4 +1,4 @@
-<div class="hiddenContent">
+<div class="hiddenContent" #hiddenContent>
     <main>
         <div id="container">
             <section>
@@ -6,21 +6,26 @@
                 </h2>
                 <h1 class="poppins">Entrar</h1>
             </section>
-            <section>
+            
+            <section [formGroup]="loginForm">
                 <div class="input-content">
                     <label for="cpf" class="poppins">Entrar com CPF:</label>
-                    <input type="text" name="cpf" class="poppins" placeholder="CPF" maxlength="11">
+                    <input type="text" name="cpf" class="poppins" placeholder="CPF" maxlength="11" formControlName = "cpf">
                 </div>
                 <div class="input-content">
                     <label for="senha" class="poppins">Entrar com senha:</label>
-                    <input type="password" name="Senha" class="poppins" placeholder="senha">
+                    <input type="password" name="senha" class="poppins" placeholder="Senha" formControlName = "senha">
                 </div>
                 <div class="input-content">
                     <div>
-                        <input type="checkbox">
+                        <div>
+                            <p class="poppins">Lembrar de mim</p>
+                            <input type="checkbox">
+                        </div>
+
                         <p class="poppins">Esqueci minha Senha</p>
                     </div>
-                    <button>Entrar</button>
+                    <button (click)=Submit() >Entrar</button>
                 </div>
             </section>
         </div>
